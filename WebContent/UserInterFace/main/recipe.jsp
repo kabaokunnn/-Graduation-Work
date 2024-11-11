@@ -3,7 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>HOME</title>
+    <title>レシピ選択</title>
 </head>
 <body>
     <header>
