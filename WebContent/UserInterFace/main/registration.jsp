@@ -16,12 +16,12 @@
 	<ul>
 	<label for="md2">牛肉</label>
 	<select value>選択してください</select>
-	<option value="">牛肉
+	<option value="pork">牛肉
 	
 	<label for="md2">豚肉</label>
-  <option value="">選択してください</option>
+ 	<option value="">選択してください</option>
+	<label for="md2">鶏肉</label>
 
-<label for="md2">鶏肉</label>
 <select>
   <option value="">選択してください</option>
   <option value="chicken">鶏肉</option>
