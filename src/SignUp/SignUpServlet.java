@@ -1,7 +1,6 @@
 package SignUp;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -15,52 +14,35 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/SignUpServlet")
 public class SignUpServlet extends HttpServlet {
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/UserDB";
-    private static final String JDBC_USER = "root";
-    private static final String JDBC_PASSWORD = "password";
-	private static final String BCrypt = null;
-
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // フォームデータを取得
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String age = request.getParameter("age");
         String gender = request.getParameter("gender");
-        String ageStr = request.getParameter("age");
 
-        int age = 0;
+        // DBに接続し、データを保存
         try {
-            age = Integer.parseInt(ageStr);
-        } catch (NumberFormatException e) {
-            response.getWriter().println("<html><body><h2>エラーが発生しました: 年齢が不正です。</h2></body></html>");
-            return;
-        }
+            Connection connection = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/your_database", "your_username", "your_password");
+            String sql = "INSERT INTO users (username, email, password, age, gender) VALUES (?, ?, ?, ?, ?)";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, username);
+            statement.setString(2, email);
+            statement.setString(3, password);  // セキュリティのためパスワードはハッシュ化して保存すべきです
+            statement.setInt(4, Integer.parseInt(age));
+            statement.setString(5, gender);
 
-
-        try (Connection conn = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD)) {
-            String sql = "INSERT INTO Users (username, email, password, gender, age) VALUES (?, ?, ?, ?, ?)";
-            try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-                stmt.setString(1, username);
-                stmt.setString(2, email);
-                stmt.setString(3, password);
-                stmt.setString(4, gender);
-                stmt.setInt(5, age);
-
-                int rowsInserted = stmt.executeUpdate();
-                response.setContentType("text/html; charset=UTF-8");
-                PrintWriter out = response.getWriter();
-
-                if (rowsInserted > 0) {
-                    out.println("<html><body><h2>登録が完了しました！</h2>");
-                    out.println("<a href='mainmenu.jsp'>メインメニューへ</a></body></html>");
-                } else {
-                    out.println("<html><body><h2>登録に失敗しました。再試行してください。</h2></body></html>");
-                }
+            int rowsInserted = statement.executeUpdate();
+            if (rowsInserted > 0) {
+                response.sendRedirect("main/mainmenu.jsp"); // 登録成功ページへリダイレクト
+            } else {
+                response.sendRedirect("error.jsp"); // エラーページ
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            response.getWriter().println("<html><body><h2>エラーが発生しました: " + e.getMessage() + "</h2></body></html>");
+            response.sendRedirect("error.jsp"); // エラーページ
         }
     }
 }
