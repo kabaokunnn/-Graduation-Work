@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>レシピ選択</title>
+<title>食材登録</title>
 </head>
 <body>
 	<ul>
