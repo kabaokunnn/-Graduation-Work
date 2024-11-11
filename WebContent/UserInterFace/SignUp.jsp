@@ -47,6 +47,16 @@
                 passwordError.style.display = "none";
             }
 
+            // 年齢のチェック
+            const age = document.getElementById("age");
+            const ageError = document.getElementById("ageError");
+            if (age.value === "") {
+                ageError.style.display = "block";
+                isValid = false;
+            } else {
+                ageError.style.display = "none";
+            }
+
             // 性別のチェック
             const male = document.getElementById("male");
             const female = document.getElementById("female");
@@ -87,6 +97,16 @@
         <input type="checkbox" id="showPassword" onclick="togglePassword()">
         <label for="showPassword">パスワードを表示</label>
         <br><br>
+
+        <!-- 年齢選択ドロップダウン -->
+        <label for="age">年齢:</label>
+        <select id="age" name="age">
+            <option value="">選択してください</option>
+            <% for (int i = 16; i <= 100; i++) { %>
+                <option value="<%= i %>"><%= i %>歳</option>
+            <% } %>
+        </select>
+        <span id="ageError" class="error">※年齢を選択してください。</span><br><br>
 
         <label>性別:</label>
         <input type="radio" id="male" name="gender" value="male">
