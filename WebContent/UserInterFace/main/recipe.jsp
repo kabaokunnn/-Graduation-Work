@@ -1,12 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>HOME</title>
 </head>
 <body>
-
+    <header>
+           <ul>
+                <li class="current"><a href="mainmenu.jsp">HOME</a></li>
+                <li><a href="registration.jsp">食材登録</a></li>
+                <li><a href="recipe.jsp">レシピ選択</a></li>
+                <li><a href="list.jsp">一覧</a></li>
+           </ul>
+    </header>
 </body>
 </html>
