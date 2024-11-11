@@ -14,14 +14,11 @@
         <li><a href="access.jsp">一覧</a></li>
     </ul>
 	<ul>
+
 	<label for="md2">牛肉</label>
-	<select value>選択してください</select><br><br>
-	
-	<label for="md2">aaaa</label>
-	<select value>選択してください</select>
 <select>
   <option value="">選択してください</option>
-  <option value="beef">牛肉</option>
+  <option value="pork">牛肉</option>
 </select>
 
 <label for="md2">豚肉</label>
