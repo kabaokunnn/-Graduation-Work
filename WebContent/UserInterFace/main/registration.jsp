@@ -17,7 +17,7 @@
 	<label for="md2">牛肉</label>
 <select>
   <option value="">選択してください</option>
-  <option value="pork">牛肉</option>
+  <option value="beef">牛肉</option>
 </select>
 
 <label for="md2">豚肉</label>
