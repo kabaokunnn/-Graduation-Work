@@ -15,40 +15,79 @@
     </ul>
 	<ul>
 	<label for="md2">牛肉</label>
-	<select value>選択してください</select>
+<select>
+  <option value="">選択してください</option>
+  <option value="beef">牛肉</option>
+</select>
 
-	<label for="md2">豚肉</label>
-	<select value>選択してください</select>
+<label for="md2">豚肉</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="pork">豚肉</option>
+</select>
 
-	<label for="md2">鶏肉</label>
-	<select value>選択してください</select>
+<label for="md2">鶏肉</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="chicken">鶏肉</option>
+</select>
 
-	<label for="md2">その他の肉</label>
-	<select value>選択してください</select>
+<label for="md2">その他の肉</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="other_meat">その他の肉</option>
+</select>
 
-	<br><br><br><label for="md2">野菜</label>
-	<select value>選択してください</select>
+<br><br><br>
+<label for="md2">野菜</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="vegetable">野菜</option>
+</select>
 
-	<label for="md2">魚介</label>
-	<select value>選択してください</select>
+<label for="md2">魚介</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="seafood">まぐり</option>
+</select>
 
-	<label for="md2">卵・乳製品</label>
-	<select value>選択してください</select>
+<label for="md2">卵・乳製品</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="eggs_dairy">卵・乳製品</option>
+</select>
 
-	<label for="md2">豆・芋</label>
-	<select value>選択してください</select>
+<label for="md2">豆・芋</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="beans_tubers">豆・芋</option>
+</select>
 
-	<br><br><br><label for="md2">きのこ</label>
-	<select value>選択してください</select>
+<br><br><br>
+<label for="md2">きのこ</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="mushroom">きのこ</option>
+</select>
 
-	<label for="md2">米・麺・パン</label>
-	<select value>選択してください</select>
+<label for="md2">米・麺・パン</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="grains">米・麺・パン</option>
+</select>
 
-	<label for="md2">果物</label>
-	<select value>選択してください</select>
+<label for="md2">果物</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="fruits">果物</option>
+</select>
 
-	<label for="md2">その他</label>
-	<select value>選択してください</select>
+<label for="md2">その他</label>
+<select>
+  <option value="">選択してください</option>
+  <option value="others">その他</option>
+</select>
+
 	</ul>
 </body>
 </html>
