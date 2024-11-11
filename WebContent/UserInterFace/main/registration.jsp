@@ -14,13 +14,40 @@
         <li><a href="access.jsp">一覧</a></li>
     </ul>
 	<ul>
-	<label for="md2">豚肉</label>
-	<select value>選択してください</select>
-	
 	<label for="md2">牛肉</label>
 	<select value>選択してください</select>
-	
-	<label for="md2">aaaa</label>
+
+	<label for="md2">豚肉</label>
+	<select value>選択してください</select>
+
+	<label for="md2">鶏肉</label>
+	<select value>選択してください</select>
+
+	<label for="md2">その他の肉</label>
+	<select value>選択してください</select>
+
+	<br><br><br><label for="md2">野菜</label>
+	<select value>選択してください</select>
+
+	<label for="md2">魚介</label>
+	<select value>選択してください</select>
+
+	<label for="md2">卵・乳製品</label>
+	<select value>選択してください</select>
+
+	<label for="md2">豆・芋</label>
+	<select value>選択してください</select>
+
+	<br><br><br><label for="md2">きのこ</label>
+	<select value>選択してください</select>
+
+	<label for="md2">米・麺・パン</label>
+	<select value>選択してください</select>
+
+	<label for="md2">果物</label>
+	<select value>選択してください</select>
+
+	<label for="md2">その他</label>
 	<select value>選択してください</select>
 	</ul>
 </body>
