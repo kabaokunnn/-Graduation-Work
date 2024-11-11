@@ -49,7 +49,7 @@
 <label for="md2">魚介</label>
 <select>
   <option value="">選択してください</option>
-  <option value="seafood">まぐり</option>
+  <option value="seafood">まぐろ</option>
 </select>
 
 <label for="md2">卵・乳製品</label>
