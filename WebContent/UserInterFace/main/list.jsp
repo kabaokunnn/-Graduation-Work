@@ -8,10 +8,10 @@
 <body>
     <header>
            <ul>
-                <li class="current"><a href="mainmenu.jsp">HOME</a></li>
+                <li><a href="mainmenu.jsp">HOME</a></li>
                 <li><a href="registration.jsp">食材登録</a></li>
                 <li><a href="recipe.jsp">レシピ選択</a></li>
-                <li><a href="list.jsp">一覧</a></li>
+                <li class="current"><a href="list.jsp">一覧</a></li>
            </ul>
     </header>
 </body>

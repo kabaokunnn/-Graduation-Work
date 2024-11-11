@@ -8,10 +8,10 @@
 </head>
 <body>
 	<ul>
-        <li class="current"><a href="mainmenu.jsp">HOME</a></li>
-        <li><a href="registration.jsp">食材登録</a></li>
-        <li><a href="gallery.jsp">レシピ選択</a></li>
-        <li><a href="access.jsp">一覧</a></li>
+        <li><a href="mainmenu.jsp">HOME</a></li>
+        <li class="current"><a href="registration.jsp">食材登録</a></li>
+        <li><a href="recipe.jsp">レシピ選択</a></li>
+        <li><a href="list.jsp">一覧</a></li>
     </ul>
 	<ul>
 	<label for="md2">牛肉</label>
