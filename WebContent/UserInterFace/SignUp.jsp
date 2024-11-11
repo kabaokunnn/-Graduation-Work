@@ -81,7 +81,7 @@
 </head>
 <body>
     <h2>新規登録</h2>
-    <form action="RegisterServlet" method="post" onsubmit="return validateForm()">
+    <form action="SignUpServlet" method="post" onsubmit="return validateForm()">
         <label for="username">ユーザー名:</label>
         <input type="text" id="username" name="username">
         <span id="usernameError" class="error">※ユーザー名を入力してください。</span><br><br>
